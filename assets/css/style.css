@@ -5,6 +5,12 @@ Marcos Bort - Portfolio
 @import url("slider.css");
 
 
+:root {
+	--font-00: "Roboto Condensed", sans-serif;
+	--font-01: 'Questrial', sans-serif;
+}
+
+
 /* ------------------------------------------------------------------
 General Styles
 ------------------------------------------------------------------- */
@@ -181,7 +187,7 @@ a,
 /* Forms */
 
 .form-control {
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: var(--font-01);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 11px;
@@ -508,6 +514,11 @@ a,
 	font-size: 14px;
 }
 
+.fa-angle-down {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
 .help-block ul {
 	list-style: none;
 	padding: 0;
@@ -699,8 +710,9 @@ blockquote {
 }
 
 .font-serif {
-	font-family: Volkhov, "Times New Roman", sans-serif;
-	font-style: italic;
+	/* font-family: Volkhov, "Times New Roman", sans-serif; */
+	/* font-style: italic; */
+	font-family: var(--font-01);
 }
 
 .large-text {
@@ -925,7 +937,7 @@ Sections
 .module,
 .module-small {
 	position: relative;
-	padding: 85px 0;
+	padding: 65px 0 80px 0;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	-webkit-background-size: cover;
@@ -947,7 +959,7 @@ Sections
 	font-weight: 400;
 	font-size: 30px;
 	color: #111;
-	margin: 0 0 70px;
+	margin: 0 0 55px;
 }
 
 .module-subtitle {
@@ -1231,6 +1243,25 @@ Count to
 	font-size: 42px;
 }
 
+
+/* -------------------------------------------------------------------
+Video box
+------------------------------------------------------------------- */
+
+.parallax {
+	/* The image used */
+	background-image: url("../images/1604486-1920.jpg");
+  
+	/* Set a specific height */
+	min-height: 400px;
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
 /* -------------------------------------------------------------------
 Video box
 ------------------------------------------------------------------- */
@@ -1255,6 +1286,11 @@ Video box
 
 .video-subtitle {
 	color: rgba(255, 255, 255, .5);
+}
+
+.image-separator {
+	height: 320px;
+	background-position-y: -175px;
 }
 
 /* -------------------------------------------------------------------
