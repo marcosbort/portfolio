@@ -1301,10 +1301,13 @@ Video box
 
 .parallax {
 	/* The image used */
-	background-image: url("../images/1604486-1920.jpg");
+	/* background-image: url("../images/1604486-1920.jpg"); */
+	/* background-image: url("../images/setup.jpg"); */
+	background-image: url("../images/bg-02.jpg");
   
 	/* Set a specific height */
-	height: 360px;
+	/* height: 360px; */
+	height: 380px;
   
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
