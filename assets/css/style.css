@@ -1825,8 +1825,7 @@ Testimonials
 
 .testimonials-slider {
 	position: relative;
-	padding-top: 90px;
-	padding-top: 50px;
+	padding-top: 60px;
 	padding-bottom: 120px;
 	color: white;
 	border-bottom: 1px solid rgb(194, 194, 194);
@@ -1849,7 +1848,7 @@ Testimonials
 
 .testimonial-caption {
 	text-align: center;
-	margin: -10px 0 0 !important;
+	margin: -5px 0 0 !important;
 }
 
 .testimonial-title {
