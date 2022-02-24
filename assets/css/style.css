@@ -1826,20 +1826,22 @@ Testimonials
 .testimonials-slider {
 	position: relative;
 	padding-top: 90px;
+	padding-top: 50px;
 	padding-bottom: 120px;
 	color: white;
 	border-bottom: 1px solid rgb(194, 194, 194);
+	height: 400px;
 }
 
 .bg-testimonials {
 	background-image: url("../images/testimonials-65.jpg");
-	opacity: 0.95;
+	opacity: 0.90;
 }
 
 .testimonial-text {
 	text-align: center;
 	font-style: normal;
-	font-size: 17px;
+	font-size: 16px;
 	font-family: var(--font-01);
 	font-weight: 200;
 	letter-spacing: 1px;
@@ -1847,7 +1849,7 @@ Testimonials
 
 .testimonial-caption {
 	text-align: center;
-	padding: 10px 0 0;
+	margin: -10px 0 0 !important;
 }
 
 .testimonial-title {
