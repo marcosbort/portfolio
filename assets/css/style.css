@@ -11,25 +11,12 @@ font-family: 'Roboto', sans-serif;
 
 
 :root {
-	/* --font-00: "Roboto Condensed", sans-serif; */
-	/* --font-01: 'Questrial', sans-serif; */
-	/* --font-02: 'Oswald', sans-serif; */
 	--font-00: 'Raleway', sans-serif;
 	--font-01: 'Raleway', sans-serif;
 	--font-02: 'Raleway', sans-serif;
 	--rojo-1: #dd0909;
 	--rojo-2: #b10505;
 }
-
-/*  Title Principal
-margin-bottom: 15px;
-font-size: 35px;
-font-weight: 800;
-text-transform: uppercase;
-text-align: center;
-letter-spacing: 5px;
-line-height: 1.3;
-*/
 
 /* ------------------------------------------------------------------
 General Styles
@@ -74,27 +61,44 @@ iframe {
 	left: auto !important;
 }
 
-
 .section-line{
-	width: 55px;
-	width: 55px;
-	height: 1px;
-	margin: 5px auto;
+	width: 60px;
+	height: 2px;
 	background: #e41919;
+  margin: -35px auto 20px auto;
 }
 
 .st-point{
-	/* color: #e41919; */
 	color: var(--rojo-1);
-	font-size: 20px;
+	font-size: 16px;
 }
 
-/* .section-line{
-	width: 55px;
-	height: 1px;
-	margin: 30px auto;
-	background: #e41919;
-} */
+/* ------------------------------------------------------------------
+	Ver Codigo en Github
+------------------------------------------------------------------- */
+.works-code{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.works-code .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.works-code .title-box img {
+  width: 168px;
+
+}
+.works-code ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+}
 
 
 
@@ -128,12 +132,15 @@ video{
 }
 
 
+
+
+
 /* ------------------------------------------------------------------
 	Icons Box Skills
 ------------------------------------------------------------------- */
 .features-item {
-	/* width: 120px; */
 	margin-bottom: 18px !important;
+  margin: 20px 0 !important;
 }
 
 .features-title, .alt-features-title {
@@ -590,10 +597,10 @@ a.btn-mod:focus{
 }
 .btn-hero{
 	background-color: rgba(17, 17, 17, 0.8) !important;
-	/* mix-blend-mode: multiply; */
+	background-color: rgba(255, 255, 255, 0.171) !important;
+  color:rgba(0, 0, 0, .4);
+  /* backdrop-filter: blur(16px); */
 }
-
-
 
 
 
@@ -988,7 +995,8 @@ Navbar
 ------------------------------------------------------------------- */
 
 .navbar-custom {
-	background-color: rgba(10, 10, 10, .9);
+  background-color: rgba(10, 10, 10, .8);
+  /* backdrop-filter: blur(10px) !important; */
 	border: 0;
 	border-radius: 0;
 	z-index: 1000;
@@ -996,14 +1004,16 @@ Navbar
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 12px;
+  /* height: 55px; */
 	-webkit-transition: background, padding 0.4s ease-in-out 0s;
-	   -moz-transition: background, padding 0.4s ease-in-out 0s;
-		-ms-transition: background, padding 0.4s ease-in-out 0s;
-		 -o-transition: background, padding 0.4s ease-in-out 0s;
-			transition: background, padding 0.4s ease-in-out 0s;
+  -moz-transition: background, padding 0.4s ease-in-out 0s;
+  -ms-transition: background, padding 0.4s ease-in-out 0s;
+  -o-transition: background, padding 0.4s ease-in-out 0s;
+  transition: background, padding 0.4s ease-in-out 0s;
 }
 
 .navbar a {
+  /* color: rgb(0, 0, 0) !important; */
 	-webkit-transition: color 0.125s ease-in-out 0s;
 	   -moz-transition: color 0.125s ease-in-out 0s;
 		-ms-transition: color 0.125s ease-in-out 0s;
@@ -1012,35 +1022,35 @@ Navbar
 }
 
 .navbar-custom .dropdown-menu {
-	background: rgba(26, 26, 26, .9);
+  background: rgba(26, 26, 26, .9);
 	border-radius: 0;
 	border: 0;
 	padding: 0;
 	-webkit-box-shadow: none;
-	        box-shadow: none;
+  box-shadow: none;
 }
 
 .navbar-custom .navbar-brand {
-	letter-spacing: 4px;
+  letter-spacing: 4px;
 	font-weight: 400;
 	font-size: 22px;
 	color: #fff;
 }
 
 .navbar-custom .nav li > a {
-	position: relative;
+  position: relative;
 	color: rgba(255, 255, 255, .7);
 }
 
 .navbar-custom .dropdown-menu > li > a {
-	border-bottom: 1px solid rgba(73, 71, 71, 0.15) !important;
+  border-bottom: 1px solid rgba(73, 71, 71, 0.15) !important;
 	padding: 11px 15px;
 	letter-spacing: 2px;
 	color: #999;
 }
 
 .navbar-custom .dropdown-menu .dropdown-menu {
-	border-left: 1px solid rgba(73, 71, 71, 0.15);
+  border-left: 1px solid rgba(73, 71, 71, 0.15);
 	left: 100%;
 	right: auto;
 	top: 0;
@@ -1048,7 +1058,7 @@ Navbar
 }
 
 .navbar-custom .dropdown-menu.left-side .dropdown-menu {
-	border: 0;
+  border: 0;
 	border-right: 1px solid rgba(73, 71, 71, 0.15);
 	right: 100%;
 	left: auto;
@@ -1160,14 +1170,18 @@ Home Section
 }
 
 .hs-title-size-4 {
-	/* letter-spacing: 20px; */
-	letter-spacing: 18px;
+	letter-spacing: 0px;
 	font-weight: 700;
 	font-size: 48px;
-	/* font-size: 80px; */
 	font-size: 110px;
-	/* color: rgba(255, 255, 255, 0.6); */
 	color: rgba(255, 255, 255, 0.48);
+	color: rgba(0, 0, 0, 0.6);
+	color: rgba(255, 255, 255, 0.4);
+  line-height: 100px;
+}
+
+.hs-title-size-4 .title-1 {
+  font-size: 60px;
 }
 
 
@@ -1210,10 +1224,10 @@ About
 }
 
 .btn-cv {
-	background-color: var(--rojo-2) !important;
+  background-color: #111 !important;
 }
 .btn-cv:hover {
-	background-color: #111 !important;
+  background-color: var(--rojo-2) !important;
 }
 
 
@@ -1236,7 +1250,7 @@ Sections
 .module,
 .module-small {
 	position: relative;
-	padding: 50px 0 60px 0;
+	padding: 60px 0 60px 0;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	-webkit-background-size: cover;
@@ -1572,10 +1586,13 @@ Video box
 	/* background-image: url("../images/1604486-1920.jpg"); */
 	/* background-image: url("../images/setup.jpg"); */
 	background-image: url("../images/bg-02.jpg");
+	background-image: url("../images/bg-03.jpg");
+	background-image: url("../images/bg-04.jpg");
+	background-image: url("../images/bg-07.jpg");
   
 	/* Set a specific height */
 	/* height: 360px; */
-	height: 370px;
+	height: 350px;
   
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -1639,7 +1656,7 @@ Portfolio
 .works-grid {
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 0px;
 	margin-bottom: 70px;
 }
 
@@ -1654,7 +1671,6 @@ Portfolio
 .work-item {
 	width: 50%;
 	float: left;
-	margin: 0;
 }
 
 .works-grid-3 .work-item {
@@ -2425,8 +2441,49 @@ Scroll to top
 
 
 
+/* ------------------------------------------------------------------
+	Contacto
+------------------------------------------------------------------- */
+.contact-box {
+  height: 50px;
+  padding: 60px 0 10px 0;
+  /* background-color: rgb(146, 146, 146); */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.linkedin-logo {
+  width: 40px;
+}
+
+.email-logo {
+  width: 44px;
+}
+
+.github-logo {
+  width: 38px;
+}
+
+#contact .container {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ------------------------------------------------------------------
+	Footer
+------------------------------------------------------------------- */
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* -------------------------------------------------------------------
-Responsive Media Querries
+  Responsive Media Querries
 ------------------------------------------------------------------- */
 
 
@@ -2467,9 +2524,14 @@ Responsive Media Querries
 	}
 
 	.hs-title-size-4 {
-		letter-spacing: 12px;
+		letter-spacing: 1px;
 		font-size: 80px;
+    line-height: 70px;
 	}
+
+  .hs-title-size-4 .title-1 {
+    font-size: 40px;
+  }
 
 	.work-item,
 	.works-grid-3 .work-item,
@@ -2637,9 +2699,14 @@ Responsive Media Querries
 	}
 
 	.hs-title-size-4 {
-		letter-spacing: 6px;
+		letter-spacing: 1px;
 		font-size: 50px;
+    line-height: 50px;
 	}
+
+  .hs-title-size-4 .title-1 {
+    font-size: 30px;
+  }
 
 	/* Features */
 
@@ -2735,29 +2802,41 @@ Responsive Media Querries
 	}
 
 	.hs-title-size-4 {
-		letter-spacing: 6px;
+		letter-spacing: 1px;
 		font-size: 45px;
+    line-height: 50px;
 	}
 
-
+  /* .hs-title-size-4 .title-1 {
+    font-size: 35px;
+  } */
 
 }
 
 @media (max-width: 380px) {
 
 	.hs-title-size-4 {
-		letter-spacing: 6px;
+		letter-spacing: 1px;
 		font-size: 40px;
+    line-height: 50px;
 	}
+
+  .hs-title-size-4 .title-1 {
+    font-size: 30px;
+  }
 	
 }
 
 @media (max-width: 360px) {
 
 	.hs-title-size-4 {
-		letter-spacing: 6px;
+		letter-spacing: 1px;
 		font-size: 38px;
 	}
+
+  .hs-title-size-4 .title-1 {
+    font-size: 28px;
+  }
 	
 }
 
