@@ -91,6 +91,16 @@ iframe {
 }
 
 /* ------------------------------------------------------------------
+	Contacto
+------------------------------------------------------------------- */
+.datos-contacto {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------------------
 	Icons Skills
 ------------------------------------------------------------------- */
 .icon-tech {
@@ -1671,7 +1681,7 @@ Services, Content box
 ------------------------------------------------------------------- */
 .contact-box {
   height: 50px;
-  padding: 60px 0 10px 0;
+  padding: 60px 0 60px 0;
   /* background-color: rgb(146, 146, 146); */
   display: flex;
   justify-content: center;
